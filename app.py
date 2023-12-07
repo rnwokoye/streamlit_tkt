@@ -20,8 +20,8 @@ with st.form(key="form"):
         st.session_state.session_data["user_name"] = user_name
         submit = st.form_submit_button()
 
-if submit:
-    st.write(f"Text: {user_name}")
+    if submit:
+        st.write(f"Text: {user_name}")
 
 
 st.write("Pandas Testing")
