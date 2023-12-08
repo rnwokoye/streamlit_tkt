@@ -6,7 +6,7 @@ import numpy as np
 # from psycopg2.extensions import register_adapter, AsIs
 
 
-from config.db_con import create_connection
+# from config.db_con import create_connection
 
 
 st.write("Admin Page")
