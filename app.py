@@ -15,20 +15,20 @@ def my_function():
     return
 
 
-# with st.form(key="form"):
-#     user_name = st.text_input("Text")
-#     if user_name:
-#         st.session_state.session_data["user_name"] = user_name
-#     submit = st.form_submit_button()
+with st.form(key="form"):
+    user_name = st.text_input("Text")
+    if user_name:
+        st.session_state.session_data["user_name"] = user_name
+    submit = st.form_submit_button()
 
-#     if submit:
-#         st.write(f"Text: {user_name}")
+if submit:
+    st.write(f"Text: {user_name}")
 
 
-# st.write("Pandas Testing")
-# data = np.arange(0, 100, 2).reshape(5, 10)
-# df = pd.DataFrame(data)
-# st.write(df)
+st.write("Pandas Testing")
+data = np.arange(0, 100, 2).reshape(5, 10)
+df = pd.DataFrame(data)
+st.write(df)
 
 
 if __name__ == "__main__":
