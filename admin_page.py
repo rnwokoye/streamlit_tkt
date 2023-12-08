@@ -13,7 +13,7 @@ from config.db_con import create_connection
 
 st.write("Admin Page")
 
-db_connect = st.secrets.connections.cockroachdb.DATABASE_URL
+# db_connect = st.secrets.connections.cockroachdb.DATABASE_URL
 
 
 def calc_fine(row):
@@ -44,5 +44,5 @@ def get_tickets(connection_object) -> pd.DataFrame:
         return res_df
 
 
-data = get_tickets(create_connection(db_connect))
-st.write(data)
+# data = get_tickets(create_connection(db_connect))
+# st.write(data)
