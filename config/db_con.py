@@ -21,6 +21,6 @@ def create_connection(connection_url):
     try:
         connection = psycopg2.connect(connection_url)
         print("Connected to db")
-    except psycopg2.errors as e:
-        print(f"The error of '{e}' has occured")
+    except:
+        print(f"The error of has occured")
     return connection
