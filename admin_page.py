@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import datetime
 import numpy as np
-from psycopg2.extensions import register_adapter, AsIs
+
+# from psycopg2.extensions import register_adapter, AsIs
 
 
 from config.db_con import create_connection
