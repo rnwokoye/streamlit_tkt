@@ -8,6 +8,7 @@ from config.db_con import create_connection
 db_connect = st.secrets.connections.cockroachdb.DATABASE_URL
 
 st.title("Traffic Ticket Assignement")
+st.subheader("Which app is running")
 
 if "session_data" not in st.session_state:
     st.session_state.session_data = {}

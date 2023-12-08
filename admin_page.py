@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import datetime
 import numpy as np
-
-# import psycopg2
-# from psycopg2 import OperationalError
 from psycopg2.extensions import register_adapter, AsIs
 
 
@@ -42,7 +39,3 @@ def get_tickets(connection_object) -> pd.DataFrame:
         res_df["penalty_amount"] = res_df.apply(lambda x: calc_fine(x), axis=1)
 
         return res_df
-
-
-# data = get_tickets(create_connection(db_connect))
-# st.write(data)

@@ -1,7 +1,6 @@
 import psycopg2
 import os
 
-# from psycopg2 import OperationalError
 # from psycopg2.extensions import register_adapter, AsIs
 import streamlit as st
 import pandas as pd
