@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+from admin_page import get_tickets
+from config.db_con import create_connection
+
+db_connect = st.secrets.connections.cockroachdb.DATABASE_URL
 
 st.title("Traffic Ticket Assignement")
 
@@ -29,6 +33,11 @@ st.write("Pandas Testing")
 data = np.arange(0, 100, 2).reshape(5, 10)
 df = pd.DataFrame(data)
 st.write(df)
+
+data2 = get_tickets(create_connection(db_connect))
+
+
+st.write(data2)
 
 
 if __name__ == "__main__":
