@@ -4,7 +4,7 @@ import datetime
 import numpy as np
 
 # import psycopg2
-from psycopg2 import OperationalError
+# from psycopg2 import OperationalError
 from psycopg2.extensions import register_adapter, AsIs
 
 
