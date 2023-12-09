@@ -9,6 +9,7 @@ db_connect = st.secrets.connections.cockroachdb.DATABASE_URL
 
 st.title("Traffic Ticket Assignement")
 st.subheader("Which app is running")
+st.write("Nothing here")
 
 if "session_data" not in st.session_state:
     st.session_state.session_data = {}
